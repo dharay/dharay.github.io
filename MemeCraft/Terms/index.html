@@ -45,8 +45,11 @@ If you have any questions about this Privacy Policy, please contact us at Dharay
 
   // Format the date as YYYY-MM-DD
   var formattedDate = "2023-10-21"
-
+  var elements = document.querySelectorAll("#currentDate");
+  elements.forEach(function(element) {
+      element.textContent = formattedDate;
+    });
   // Set the formatted date in the HTML element with id "currentDate"
-  document.getElementById("currentDate").textContent = formattedDate;
+  // document.getElementById("currentDate").textContent = formattedDate;
 </script>
 </html>
